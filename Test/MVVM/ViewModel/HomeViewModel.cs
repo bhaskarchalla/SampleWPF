@@ -1,6 +1,6 @@
 ﻿
 
-namespace ModernDesign.MVVM.ViewModel
+namespace Test.MVVM.ViewModel
 {
      class HomeViewModel
     {

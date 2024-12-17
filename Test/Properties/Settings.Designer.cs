@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ModernDesign.Properties
+namespace Test.Properties
 {
 
 

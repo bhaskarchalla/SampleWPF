@@ -1,7 +1,7 @@
-﻿using ModernDesign.Core;
+﻿using Test.Core;
 
 
-namespace ModernDesign.MVVM.ViewModel
+namespace Test.MVVM.ViewModel
 {
     class MainViewModel : ObservebleObject
     {

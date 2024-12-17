@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ModernDesign.MVVM.View
+namespace Test.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for DiscoveryView.xaml
+    /// Interaction logic for HomeView.xaml
     /// </summary>
-    public partial class DiscoveryView : UserControl
+    public partial class HomeView : UserControl
     {
-        public DiscoveryView()
+        public HomeView()
         {
             InitializeComponent();
         }
