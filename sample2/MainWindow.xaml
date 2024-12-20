@@ -1,0 +1,61 @@
+﻿<!--<Window x:Class="sample2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sample2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu VerticalAlignment="Top" Background="LightGray" FlowDirection="LeftToRight">
+            <MenuItem Header="_File"  FlowDirection="LeftToRight">
+                <MenuItem Header="New" InputGestureText="Ctrl+N"  FlowDirection="LeftToRight"/>
+                <MenuItem Header="Open" InputGestureText="Ctrl+O"  FlowDirection="LeftToRight"/>
+                <MenuItem Header="Save" InputGestureText="Ctrl+S"  FlowDirection="LeftToRight"/>
+                <Separator />
+                <MenuItem Header="E_xit" InputGestureText="Alt+F4"  FlowDirection="LeftToRight"/>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Header="Undo" InputGestureText="Ctrl+Z"/>
+                <MenuItem Header="Redo" InputGestureText="Ctrl+Y"/>
+                <Separator />
+                <MenuItem Header="Cut" InputGestureText="Ctrl+X"/>
+                <MenuItem Header="Copy" InputGestureText="Ctrl+C"/>
+                <MenuItem Header="Paste" InputGestureText="Ctrl+V"/>
+            </MenuItem>
+            <MenuItem Header="_View">
+                <MenuItem Header="Zoom In" InputGestureText="Ctrl+Plus"/>
+                <MenuItem Header="Zoom Out" InputGestureText="Ctrl+Minus"/>
+                <Separator />
+                <MenuItem Header="Full Screen" InputGestureText="F11"/>
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="About" InputGestureText="F1"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>-->
+<Window x:Class="sample2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ContextMenuSample" Height="250" Width="250">
+    <Grid>
+        <Button Content="Right-click me!" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Menu item 1" />
+                    <MenuItem Header="Menu item 2" />
+                    <Separator />
+                    <MenuItem Header="Menu item 3" />
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
+        <Popup x:Name="submenuPopup" PlacementTarget="{Binding ElementName=menuItem}" Placement="Custom">
+            <StackPanel>
+                <TextBlock Text="Submenu Item 1"/>
+                <TextBlock Text="Submenu Item 2"/>
+            </StackPanel>
+        </Popup>
+    </Grid>
+    
+</Window>
